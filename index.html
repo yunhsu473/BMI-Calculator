@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI計算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="imgHaeder" alt=""></div>
+            <div class="form">
+                <form action="">
+                    <p>身高 cm</p>
+                    <input class="inputTall" type="text" placeholder="請輸入身高">
+                    <p>體重 kg</p>
+                    <input class="inputWeight" type="text" placeholder="請輸入體重">
+                </form>
+            </div>
+            <!-- <div class="resultBtn"> -->
+            <button class="resultBtn">看結果</button>
+            <div class="showResult" style="display: none;">
+                <div class="resultText">
+                    <p class="resultNum" style="font-size: 24px; font-weight: bold;">19.5</p>
+                    <p style="font-size: 16px">BMI</p>
+                </div>
+                <a href="#"><img src=" https://hexschool.github.io/JavaScript_HomeWork/assets/icons_loop.png"
+                        alt=""></a>
+            </div>
+            <!-- </div> -->
+            <p class="showStatus">理想</p>
+        </header>
+        <main>
+            <h2>BMI紀錄</h2>
+            <ul class="records">
+                <!-- 組字串START -->
+                <!-- <li class="record" data-num="0" style="display: none;">
+                    <p class=" showStatus" style="align-self: auto;"><span>理想</span></p>
+                    <p class="showBMI">BMI<span> 19.50</span>
+                    </p>
+                    <p class="showWeight">weight<span> 50kg</span>
+                    </p>
+                    <p class="showHeight">height<span> 160cm</span>
+                    </p>
+                    <p class="showDate"><span style="font-size: 12px;">2019 年 7 月 2 日</span></p>
+                    <a href="#" class="deleteBtn">刪除</a>
+                </li> -->
+                <!-- 組字串結束 -->
+            </ul>
+        </main>
+        <footer>
+            <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/BMICLogo.png" alt="">
+        </footer>
+    </div>
+    <script src="all.js"></script>
+</body>
+
+</html>

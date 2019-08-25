@@ -1,0 +1,404 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------- css reset----------------- */
+.wrap {
+    margin: 0 auto;
+    font-family: Microsoft JhengHei;
+    width: 1024px;
+    background-color: #F5F5F5;
+}
+
+/* -------------------header------------------- */
+
+header {
+    background: #424242;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+}
+
+header div {
+    padding: 2em;
+}
+
+header .imgHaeder {
+    background-image: url('https://upload.cc/i1/2019/05/13/jox5QR.png');
+    width: 117px;
+    background-repeat: no-repeat;
+    margin-top: 6em;
+}
+
+header .form {
+    text-align: left;
+    line-height: 2em;
+    margin-top: 3em;
+    color: #FFD366;
+}
+
+header .form input {
+    width: 250px;
+    height: 40px;
+    border: #FFD366 2px solid;
+    border-radius: 4px;
+    background-color: #424242;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    padding-left: 5px;
+}
+
+header .resultBtn {
+    background-color: #FFD366;
+    color: #424242;
+    font-size: 24px;
+    width: 120px;
+    height: 120px;
+    font-family: Microsoft JhengHei;
+    border-radius: 50%;
+    border: none;
+    margin-top: 110px;
+}
+
+header .resultBtn:hover {
+    box-shadow: 0px 1px 6px 3px rgba(255, 197, 50, 0.64);
+}
+
+/* ---header .showResult--- */
+
+header .showResult {
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    margin-top: 110px;
+    margin-right: 20px;
+}
+
+header .showResult.underweight {
+    border: 5px solid #31BAF9;
+    color: #31BAF9;
+}
+
+header .showResult.ideal {
+    border: 5px solid #86D73F;
+    color: #86D73F;
+}
+
+header .showResult.overweight {
+    border: 5px solid #FF982D;
+    color: #FF982D;
+}
+
+header .showResult.mildObesity {
+    border: 5px solid #FF6C03;
+    color: #FF6C03;
+}
+
+header .showResult.moderateObesity {
+    border: 5px solid #FF6C03;
+    color: #FF6C03;
+}
+
+header .showResult.severObesity {
+    border: 5px solid #FF1200;
+    color: #FF1200;
+}
+
+/* ---header .showResult .resultText--- */
+
+header .showResult .resultText {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+}
+
+/* ---header .showResult a--- */
+
+header .showResult a {
+    width: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    border-radius: 50%;
+}
+
+header .showResult a.underweight {
+    background: #31BAF9;
+}
+
+header .showResult a.ideal {
+    background: #86D73F;
+}
+
+header .showResult a.overweight {
+    background: #FF982D;
+}
+
+header .showResult a.mildObesity {
+    background: #FF6C03;
+}
+
+header .showResult a.moderateObesity {
+    background: #FF6C03;
+}
+
+header .showResult a.severObesity {
+    background: #FF1200;
+}
+
+/* ---header .showStatus--- */
+header .showStatus {
+    display: none;
+    font-size: 32px;
+    margin-top: 160px;
+    /* padding-left: 20px; */
+}
+
+.underweight {
+    color: #31BAF9;
+}
+
+.ideal {
+    color: #86D73F;
+}
+
+.overweight {
+    color: #FF982D;
+}
+
+.mildObesity {
+    color: #FF6C03;
+}
+
+.moderateObesity {
+    color: #FF6C03;
+}
+
+.severObesity {
+    color: #FF1200;
+}
+
+/* -----------------------main----------------------- */
+main {
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #424242;
+    margin: 40px 0px 40px 0px;
+}
+
+main .records {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+main .records .record {
+    background-color: #FFFFFF;
+    height: 62px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 5px;
+    color: #424242;
+    border-left: 7px solid;
+    margin: 5px 0px;
+    justify-content: space-around;
+    border-color: #86D73F;
+}
+
+main .records .record p {
+    font-size: 12px;
+}
+
+main .records .record p span {
+    font-size: 20px;
+}
+
+main .records .record a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #424242;
+    margin-right: 5px;
+}
+
+main .records .record.underweight {
+    border-color: #31BAF9;
+}
+
+main .records .record.ideal {
+    border-color: #86D73F;
+}
+
+main .records .record.overweight {
+    border-color: #FF982D;
+}
+
+main .records .record.mildObesity {
+    border-color: #FF6C03;
+}
+
+main .records .record.moderateObesity {
+    border-color: #FF6C03;
+}
+
+main .records .record.severObesity {
+    border-color: #FF1200;
+}
+
+/* ------------------------footer----------------------- */
+footer {
+    background-color: #FFD366;
+    height: 90px;
+    text-align: center;
+}
+
+footer img {
+    margin-top: 15px;
+}
